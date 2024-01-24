@@ -25,10 +25,6 @@ main{
     width: 100%;
     height: 100%;
 }
-section{
-    width: 100%;
-    height: 100%;
-}
 .wrap{
     max-width: 1020px;
     margin: 0 auto;
@@ -39,11 +35,13 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .sec1 .logo{
     position: absolute;
     left: 200px;
-    top: 300px;
+    top: 100px;
     width: 700px;
 }
 .sec1 .logo a{
@@ -52,11 +50,13 @@ section{
 }
 .sec1 .text{
     position: absolute;
-    top: 500px;
+    top: 300px;
     left: 200px;
     width: 600px;
     color: #FFF;
     word-break: keep-all;
+    z-index: 10;
+    cursor: default;
 }
 .sec1 .text h2{
     font-size: 60px;
@@ -67,6 +67,12 @@ section{
 .sec1 .text p{
     font-size: 24px;
 }
+.sec1 .phone{
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+    width: 40%;
+}
 .sec2 .head{
     font-size: 30px;
     color: #FFF;
@@ -74,6 +80,12 @@ section{
     padding: 30px 0;
     text-align: center;
     font-weight: bold;
+}
+.sec2 .head p{
+    width: 92%;
+    margin: 0 auto;
+    word-break: keep-all;
+    cursor: default;
 }
 .sec2 .swiper {
     width: 100%;
@@ -85,6 +97,7 @@ section{
     display: flex !important;
     align-items: center;
     justify-content: space-between;
+    cursor: default;
 }
 .swiper-slide .text .num{
     width: 60px;
@@ -134,6 +147,7 @@ section{
     font-family: 'mbc';
     font-size: 50px;
     color: #FFF;
+    cursor: default;
 }
 .sec3 h2 .logo{
     width: 85px;
@@ -171,6 +185,7 @@ section{
     font-family: 'mbc';
     font-size: 50px;
     margin-bottom: 24px;
+    cursor: default;
 }
 .sec4 h2 .logo{
     width: 85px;
@@ -221,29 +236,212 @@ section{
     font-size: 20px;
     padding: 12px 0;
 }
-#scr{
+#src{
+    opacity: 0;   
+}
+.ani1 #src{
+    transition: all 1s;
+}
+.ani2 #src{
     transition: all 2s;
-    opacity: 0;
 }
-@keyframes fade{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+.ani3 #src{
+    transition: all 3s;
 }
-.ani1{
-    animation-delay: 0.5s;
+.ani4 #src{
+    transition: all 4s;
 }
-.ani2{
-    animation-delay: 1.5s;
+.ani5 #src{
+    transition: all 5s;
 }
-.ani3{
-    animation-delay: 2.5s;
+.ani6 #src{
+    transition: all 6s;
 }
-.ani4{
-    animation-delay: 3.5s;
+.emoticon img:hover{
+    transition: all 0.5s;
+    transform: scale(1.2);
 }
-.ani5{
-    animation-delay: 4.5s;
+@media (max-width:1020px){
+    .sec1 .logo{
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sec1 .text{
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 300px;
+    }
+    .sec2 .head{
+        font-size: 18px;
+    }
+    .swiper-slide .img{
+        width: 50%;
+    }
+    .button-next{
+        right: 2%;
+    }
+    .button-prev{
+        left: 2%;
+    }
+    .sec3 .use_box{
+        width: 92%;
+    }
+    .sec3 .use_box .use{
+        width: 28%;
+        font-size: 18px;
+    }
+    .sec4 .emoticon{
+        width: 86%;
+    }
+    .sec4 .list{
+        width: 92%;
+    }
 }
-.ani6{
-    animation-delay: 5.5s;
+@media (max-width:780px){
+    .sec1 .phone{
+        width: 50%;
+    }
+    .sec2 .head{
+        font-size: 16px;
+    }
+    .swiper-slide .text .num{
+        width: 40px;
+    }
+    .swiper-slide .text h3{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .swiper-slide .text p{
+        font-size: 16px;
+    }
+    .button-next,.button-prev{
+        width: 30px;
+    }
+    .sec3 h2{
+        font-size: 30px;
+    }
+    .sec3 h2 .logo{
+        width: 50px;
+    }
+    .sec3 .use_box .arrow{
+        width: 12px;
+    }
+    .sec4 h2{
+        font-size: 30px;
+    }
+    .sec4 h2 .logo{
+        width: 50px;
+    }
+    .sec4 .emoticon li img{
+        width: 40px;
+    }
+    .sec4 .list .flex p{
+        font-size: 18px;
+    }
+    .sec4 .list .flex span{
+        font-size: 14px;
+    }
+    .sec4 .box{
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    .sec4 .emoticon li{
+        font-size: 18px;
+    }
 }
+@media (max-width:680px){
+    .sec1{
+        height: auto;
+    }
+    .sec1 .logo{
+        width: 86%;
+        margin: 0 auto;
+        padding: 24px 0;
+        position: unset;
+        transform: translateX(0);
+    }
+    .sec1 .text{
+        width: 86%;
+        margin: 0 auto;
+        padding: 24px 0;
+        position: unset;
+        transform: translateX(0);
+    }
+    .sec1 .text h2{
+        font-size: 40px;
+    }
+    .sec1 .text p{
+        font-size: 18px;
+    }
+    .sec1 .phone{
+        display: none;
+    }
+}
+@media (max-width:580px){
+    .arrow{
+        display: none;
+    }
+    .sec3 .use_box{
+        justify-content: center;
+    }
+    .sec3 .use_box .use{
+        width: 55%;
+    }
+    .swiper-slide .text .num{
+        width: 30px;
+    }
+}
+@media (max-width:480px){
+    .sec1 .text h2{
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+    .sec1 .text p{
+        font-size: 14px;
+    }
+    .sec2 .head{
+        padding: 18px 0;
+        font-size: 14px;
+    }
+    .swiper-slide .text h3{
+        font-size: 18px;
+    }
+    .swiper-slide .text p{
+        font-size: 14px;
+    }
+    .sec2 .swiper{
+        padding: 50px 0;
+    }
+    .sec3 h2{
+        font-size: 24px;
+    }
+    .sec3 h2 .logo{
+        width: 40px;
+    }
+    .sec4 h2{
+        font-size: 24px;
+    }
+    .sec4 h2 .logo{
+        width: 40px;
+    }
+    .sec4 .box{
+        font-size: 14px;
+    }
+    .sec4 .list{
+        padding: 0;
+    }
+    .sec4 .list .flex p{
+        font-size: 16px;
+    }
+}
+.wave-text span {
+    display: inline-block;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transform: translateY(-0px);
+  }
+  
+  .wave-text span.up {
+    transform: translateY(-40px);
+  }
