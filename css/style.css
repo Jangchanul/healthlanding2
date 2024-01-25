@@ -283,6 +283,9 @@ main{
     transition: all 0.5s;
     transform: scale(1.2);
 }
+.sec3 .use_box .use figcaption{
+    line-height: 1.3;
+}
 @media (max-width:1200px){
     .sec1 .text h2{
         font-size: 40px;
