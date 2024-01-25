@@ -107,6 +107,17 @@ main{
     font-family: 'mbc';
     margin-bottom: 24px;
     font-size: 40px;
+    display: inline-block;
+    padding-right: 30px;
+}
+.swiper-slide .text .pen1{
+    background: linear-gradient(to top, #85D8DE 40%, transparent 40%);
+}
+.swiper-slide .text .pen2{
+    background: linear-gradient(to top, #CEED79 40%, transparent 40%);
+}
+.swiper-slide .text .pen3{
+    background: linear-gradient(to top, #FFCADE 40%, transparent 40%);
 }
 .swiper-slide .text p{
     color: #6C6C6C;
@@ -407,6 +418,7 @@ main{
     }
     .swiper-slide .text h3{
         font-size: 18px;
+        padding-right: 15px;
     }
     .swiper-slide .text p{
         font-size: 14px;
