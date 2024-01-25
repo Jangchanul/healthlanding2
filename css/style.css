@@ -52,7 +52,7 @@ main{
     position: absolute;
     top: 300px;
     left: 200px;
-    width: 600px;
+    
     color: #FFF;
     word-break: keep-all;
     z-index: 10;
@@ -61,11 +61,22 @@ main{
 .sec1 .text h2{
     font-size: 60px;
     font-family: 'mbc';
-    white-space: pre-line;
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.sec1 .text h2 img{
+    width: 150px;
 }
 .sec1 .text p{
     font-size: 24px;
+    width: 600px;
+    margin-bottom: 30px;
+}
+.sec1 .store{
+    display: block;
+    width: 200px;
 }
 .sec1 .phone{
     position: absolute;
@@ -272,6 +283,14 @@ main{
     transition: all 0.5s;
     transform: scale(1.2);
 }
+@media (max-width:1200px){
+    .sec1 .text h2{
+        font-size: 40px;
+    }
+    .sec1 .text h2 img{
+        width: 120px;
+    }
+}
 @media (max-width:1020px){
     .sec1 .logo{
         width: 70%;
@@ -279,7 +298,6 @@ main{
         transform: translateX(-50%);
     }
     .sec1 .text{
-        width: 70%;
         left: 50%;
         transform: translateX(-50%);
         top: 300px;
@@ -381,16 +399,24 @@ main{
         transform: translateX(0);
     }
     .sec1 .text h2{
-        font-size: 40px;
+        font-size: 30px;
+        margin-bottom: 24px;
+    }
+    .sec1 .text h2 img{
+        width: 80px;
     }
     .sec1 .text p{
         font-size: 18px;
+        width: 86%;
     }
     .sec1 .phone{
         display: none;
     }
 }
 @media (max-width:580px){
+    .sec1 .text h2{
+        font-size: 24px;
+    }
     .arrow{
         display: none;
     }
@@ -406,11 +432,17 @@ main{
 }
 @media (max-width:480px){
     .sec1 .text h2{
-        font-size: 30px;
-        margin-bottom: 24px;
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .sec1 .text h2 img{
+        width: 50px;
     }
     .sec1 .text p{
         font-size: 14px;
+    }
+    .sec1 .store{
+        width: 30vw;
     }
     .sec2 .head{
         padding: 18px 0;
