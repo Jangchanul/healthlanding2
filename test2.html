@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap"
+        rel="stylesheet">
+    <body>
+        <h1 style="text-align: center;">건강돋보기 사용방법</h1>
+        <section class="c-container" style="position: static;">
+            <ul class="timeline">
+                <li class="right">
+                    <div class="card-view fade-in" data-scroll="data-scroll">
+                        <div class="time-thumb-row">
+                            <div class="time-content">
+                                <h4>요양보호사 건강돋보기 앱 활성화</h4>
+                            </div>
+                        </div>
+                        <img
+                            class="width50"
+                            src="img/img1.png"
+                            alt="">
+                    </div>
+                </li>
+                <li class="left">
+                    <div class="card-view fade-in" data-scroll="data-scroll">
+                        <div class="time-thumb-row">
+                            <div class="time-content">
+                                <h4>앱 클릭</h4>
+                            </div>
+                        </div>
+                        <img
+                            class="width50"
+                            src="img/img2.png"
+                            alt="">
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="card-view fade-in" data-scroll="data-scroll">
+                        <div class="time-thumb-row">
+                            <div class="time-content">
+                                <h4>어르신 얼굴인식</h4>
+                            </div>
+                        </div>
+                        <img
+                            class="width50"
+                            src="img/img3.png"
+                            alt="">
+                    </div>
+                </li>
+                <li class="left">
+                    <div class="card-view fade-in" data-scroll="data-scroll">
+                        <div class="time-thumb-row">
+                            <div class="time-content">
+                                <h4>측정완료</h4>
+                            </div>
+                        </div>
+                        <img
+                            class="width50"
+                            src="img/img4.png"
+                            alt="">
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="card-view fade-in" data-scroll="data-scroll">
+                        <div class="time-thumb-row">
+                            <div class="time-content">
+                                <h4>측정결과</h4>
+                            </div>
+                        </div>
+                        <img
+                            class="width50"
+                            src="img/img5.png"
+                            alt="">
+                    </div>
+                </li>
+                <li class="left">
+                    <div class="card-view fade-in" data-scroll="data-scroll">
+                        <div class="time-thumb-row">
+                            <div class="time-content">
+                                <h4>카카오 알림톡 및 지자체, 가족정보 공유</h4>
+                            </div>
+                        </div>
+                        <img
+                            class="width50"
+                            src="img/img6.png"
+                            alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <script src="https://md-aqil.github.io/images/scroll-out.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Lato', sans-serif;
+
+            }
+            .left .time-thumb-row{
+                justify-content: flex-end;
+            }
+            .c-container {
+                margin: auto;
+                width: 93%;
+                position: relative;
+                z-index: 1;
+            }
+            .card-view {
+                -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+                box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+                border-radius: 4px;
+                padding: 22px;
+                margin-bottom: 20px;
+                background: #fff;
+                text-align: center;
+            }
+            .flex-row {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+            .spacer {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            .bg-gray {
+                background: #F8F8F8;
+            }
+            .no-margin {
+                margin: 0 !important;
+            }
+            .flex-row .flex-col {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            /* common css up */
+            .timeline {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: relative;
+            }
+            .timeline li.right {
+                margin-left: auto;
+            }
+            .timeline li:first-child {
+                margin-top: 0;
+            }
+            .timeline li {
+                width: 47%;
+                position: relative;
+                margin-top: 50px;
+            }
+            .timeline:before {
+                content: '';
+                width: 4px;
+                height: 100%;
+                background: #E4E4E4;
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            .timeline li:before {
+                content: '';
+                --size: 16px;
+                width: var(--size);
+                height: var(--size);
+                background: #00796B;
+                display: block;
+                position: absolute;
+                left: -48px;
+                border-radius: 50%;
+            }
+            .time-thumb-row {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                margin-bottom: 20px;
+            }
+            .time-thumb-row .time-content {
+                margin-left: 14px;
+            }
+            .time-thumb-row .time-content h4 {
+                margin: 0;
+                color: #212121;
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .time-thumb-row .time-content time {
+                font-size: 14px;
+                color: #666666;
+            }
+            .timeline li.left:before {
+                left: inherit;
+                right: -48px;
+            }
+            .width100 {
+                width: 100%;
+                max-height: 500px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .fade-in[data-scroll] {
+                opacity: 0;
+                will-change: transform, scale, opacity;
+                -webkit-transform: translateY(6rem) scale(0.93);
+                transform: translateY(6rem) scale(0.93);
+                transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+
+            .fade-in-right[data-scroll] {
+                opacity: 0;
+                will-change: transform, scale, opacity;
+                -webkit-transform: translatex(6rem) scale(0.93);
+                transform: translatex(6rem) scale(0.93);
+                transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+            .fade-in-left[data-scroll] {
+                opacity: 0;
+                will-change: transform, scale, opacity;
+                -webkit-transform: translatex(-6rem) scale(0.93);
+                transform: translatex(-6rem) scale(0.93);
+                transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+
+            .fade-in[data-scroll="in"],
+            .fade-in-right[data-scroll="in"],
+            .fade-in-left[data-scroll="in"] {
+                opacity: 1;
+                -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+            }
+
+            p {
+                color: #5d5d5d;
+                line-height: 1.5;
+            }
+        </style>
+        <script>
+            ScrollOut({
+                cssProps: {
+                    visibleY: true,
+                    viewportY: true
+                }
+            });
+        </script>
+    </body>
+</html>
