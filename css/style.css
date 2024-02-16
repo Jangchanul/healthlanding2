@@ -134,9 +134,11 @@ main{
     color: #6C6C6C;
     font-size: 24px;
     word-break: keep-all;
-    white-space: pre-line;
 }
 .swiper-slide .img{
+    width: 600px;
+}
+.swiper-slide .text{
     width: 600px;
 }
 .button-next{
@@ -309,6 +311,9 @@ main{
         font-size: 18px;
     }
     .swiper-slide .img{
+        width: 50%;
+    }
+    .swiper-slide .text{
         width: 50%;
     }
     .button-next{
